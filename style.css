@@ -1,0 +1,231 @@
+        /*================== Common CSS =================*/
+        
+        body {
+            color: #666666;
+            font-family: Georgia, sans-serif;
+            font-size: 16px;
+            line-height: 1.5em;
+            margin: 0;
+        }
+        .container {
+            margin: 0 auto;
+            max-width: 960px;
+            width: 96%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        /*============== Top Header CSS ======================*/
+        
+        .header_area {
+            width: 100%;
+            clear: both;
+        }
+        #top_header_area {
+            background: #ba2c1f;
+            padding: 15px 0;
+            width: 100%;
+        }
+        .inner_top_header {
+            overflow: hidden;
+        }
+        .mini_menu {
+            padding-top: 5px;
+            float: left;
+            width: 70%;
+        }
+        .mini_menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: left;
+        }
+        .mini_menu ul li {
+            display: inline-block;
+            position: relative;
+            margin-right: 20px;
+        }
+        .mini_menu ul li::after {
+            background: #fff;
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 6px;
+            right: -10px;
+            height: 12px;
+            width: 1px;
+        }
+        .mini_menu ul li:last-child::after {
+            display: none;
+        }
+        .mini_menu ul li a {
+            color: #ffffff;
+            display: block;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .mini_menu ul li a:hover {
+            color: #ffffff;
+            display: block;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .search_area {
+            float: right;
+            width: 30%;
+        }
+        .search_area form {
+            background: #fff;
+            border-radius: 25px;
+            float: right;
+            padding: 2%;
+            max-width: 210px;
+            width: 96%;
+        }
+        .search_area input {
+            border: 0px solid;
+            width: 75%;
+            padding: 1%;
+            float: left;
+            color: #000;
+        }
+        .search_area input[type="submit"] {
+            background: url(img/search.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            width: 23%;
+            cursor: pointer;
+        }
+        /*================= Main Header Area==================*/
+        
+        .main_header_area {
+            width: 100%;
+            clear: both;
+        }
+        .inner_header {
+            padding: 40px 0;
+            overflow: hidden;
+        }
+        .logo_area {
+            float: left;
+            width: 240px;
+        }
+        .social_area {
+            padding-top: 20px;
+            float: right;
+            max-width: 600px;
+            width: 100%;
+        }
+        .social_area ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: right;
+        }
+        .social_area ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+        .social_area ul li a {
+            display: block;
+            text-decoration: none;
+        }
+        .social_area ul li a i {
+            background: #333333;
+            border-radius: 50%;
+            display: block;
+            text-decoration: none;
+            width: 35px;
+            padding-top: 8px;
+            color: #fff;
+            height: 25px;
+            text-align: center;
+            transition: 0.5s;
+        }
+        .social_area ul li a:hover i {
+            background: #ba2e1f;
+        }
+        /*=============== Main Menu Css==================*/
+        
+        #main_menu {
+            width: 100%;
+            clear: both;
+        }
+        .inner_menu {
+            background: url(img/ber.png);
+            background-repeat: repeat-x;
+            background-size: 100% 100%;
+            min-height: 30px;
+            padding: 10px 0;
+            border-radius: 5px;
+        }
+        #main_menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        #main_menu ul li {
+            display: inline-block;
+            margin: 0 5px;
+            position: relative;
+        }
+        #main_menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 5px;
+        }
+        #main_menu ul li a:hover {
+            color: #ba2e1f;
+        }
+        #main_menu ul li:hover a {
+            color: #ba2e1f;
+        }
+        #main_menu ul li:hover ul li a {
+            color: #fff;
+        }
+        /*=============== Dropdown Menu Css==================*/
+        
+        #main_menu ul ul {
+            position: absolute;
+            background: red;
+            width: 180px;
+            left: -999999px;
+            top: 33px;
+        }
+        #main_menu ul li:hover ul {
+            left: 0;
+        }
+        #main_menu ul li:hover ul ul {
+            left: -999999px;
+        }
+        #main_menu ul ul ul {
+            left: -999999px;
+            top: 0px
+        }
+        #main_menu ul li:hover ul li:hover ul {
+            left: 180px;
+        }
+        #main_menu ul ul li {
+            margin: 0;
+            display: block;
+        }
+        #main_menu ul ul li a:hover {
+            background: #333333;
+            color: #fff;
+        }
+        #main_menu ul ul li:hover a {
+            background: #333333;
+            color: #fff;
+        }
+        #main_menu ul ul li:hover ul li a {
+            background: none;
+            color: #fff;
+        }
+        #main_menu ul ul li ul li a:hover {
+            background: #333333;
+            color: #fff;
+        }
