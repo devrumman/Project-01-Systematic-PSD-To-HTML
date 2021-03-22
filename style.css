@@ -33,14 +33,14 @@ img {
 
 /*============== Top Header CSS ======================*/
 
-.header_area {
-    width: 100%;
-    clear: both;
-}
 #top_header_area {
     background: #ba2c1f;
     padding: 15px 0;
     width: 100%;
+}
+.header_area {
+    width: 100%;
+    clear: both;
 }
 .inner_top_header {
     overflow: hidden;
