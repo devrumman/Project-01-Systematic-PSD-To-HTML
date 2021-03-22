@@ -161,6 +161,8 @@ img {
 }
 .social_area ul li a:hover i {
     background: #ba2e1f;
+    transform: rotate(360deg);
+    transition: 1.5s;
 }
 
 /*=============== Main Menu Css==================*/
